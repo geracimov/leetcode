@@ -23,6 +23,14 @@ package ru.geracimov.leetcode.binary_search.template1;
 
 public class GuessNumber extends GuessGame {
 
+    public GuessNumber(int n) {
+        super(n);
+    }
+
+    public GuessNumber() {
+        super(Integer.MAX_VALUE);
+    }
+
     public int guessNumber(int n) {
         var left = 1;
         var right = n;

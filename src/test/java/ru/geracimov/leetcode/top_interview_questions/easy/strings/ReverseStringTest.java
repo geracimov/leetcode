@@ -9,7 +9,7 @@ class ReverseStringTest {
     private final ReverseString reverseString = new ReverseString();
 
     @ParameterizedTest
-    @CsvSource(value = {"qwertyu|uytrewq", "a|a", "''|''"}, delimiter = '|')
+    @CsvSource(value = {"rotator|rotator", "a|a", "''|''"}, delimiter = '|')
     void reverseString(String original, String reversed) {
         char[] chars = original.toCharArray();
         reverseString.reverseString(chars);

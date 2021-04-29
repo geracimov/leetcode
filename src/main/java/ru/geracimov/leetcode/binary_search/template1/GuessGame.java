@@ -8,8 +8,8 @@ abstract class GuessGame {
     private static final Logger LOGGER = Logger.getLogger(GuessGame.class.getSimpleName());
     private final int guessedNumber;
 
-    protected GuessGame() {
-        this.guessedNumber = new Random().nextInt() & Integer.MAX_VALUE;
+    protected GuessGame(int n) {
+        this.guessedNumber = 1 + new Random().nextInt(n) & n;
         LOGGER.log(Level.INFO, "guessed {0}", guessedNumber);
     }
 
