@@ -1,4 +1,4 @@
-package ru.geracimov.leetcode.binary_search.template1.sqrt;
+package ru.geracimov.leetcode.binary_search.template1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -7,13 +7,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class SolutionTest {
-    private final Solution solution = new Solution();
+class SqrtTest {
+    private final Sqrt sqrt = new Sqrt();
 
     @ParameterizedTest
     @MethodSource("provideInts")
     void sqrtTest(int target, int expected) {
-        Assertions.assertEquals(expected, solution.mySqrt(target));
+        Assertions.assertEquals(expected, sqrt.mySqrt(target));
     }
 
     private static Stream<Arguments> provideInts() {

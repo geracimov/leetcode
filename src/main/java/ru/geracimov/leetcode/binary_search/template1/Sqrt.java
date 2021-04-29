@@ -1,4 +1,4 @@
-package ru.geracimov.leetcode.binary_search.template1.sqrt;
+package ru.geracimov.leetcode.binary_search.template1;
 
 /**
  * Given a non-negative integer x, compute and return the square root of x.
@@ -9,7 +9,7 @@ package ru.geracimov.leetcode.binary_search.template1.sqrt;
  * <p>
  * 0 <= x <= 231 - 1
  */
-public class Solution {
+public class Sqrt {
 
     public int mySqrt(int x) {
         return (int) Math.sqrt(x);
