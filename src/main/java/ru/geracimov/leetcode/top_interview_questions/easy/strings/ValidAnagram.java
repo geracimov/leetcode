@@ -1,5 +1,15 @@
 package ru.geracimov.leetcode.top_interview_questions.easy.strings;
 
+/**
+ * Valid Anagram
+ * <p>
+ * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+ * Constraints:
+ * <ul>
+ *    <li>1 <= s.length, t.length <= 5 * 10^4</li>
+ *    <li>s and t consist of lowercase English letters.</li>
+ * <ul/>
+ */
 public class ValidAnagram {
 
     public boolean isAnagram(String s, String t) {

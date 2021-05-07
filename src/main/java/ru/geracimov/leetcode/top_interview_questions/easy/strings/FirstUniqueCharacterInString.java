@@ -4,6 +4,17 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * First Unique Character in a String
+ * <p>Given a string s, return the first non-repeating character in it and return its index.
+ * If it does not exist, return -1.</p>
+ * Constraints:
+ * <ul>
+ *     <li>1 <= s.length <= 10^5</li>
+ *     <li>s consists of only lowercase English letters.</li>
+ * </ul>
+ * <p>
+ */
 public class FirstUniqueCharacterInString {
 
     public int firstUniqChar(String s) {
