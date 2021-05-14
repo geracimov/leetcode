@@ -17,4 +17,20 @@ public class PowerOfThree {
     private double log(int a, int b) {
         return Math.log10(b) / Math.log10(a);
     }
+
+    public boolean isPowerOfThree2(int n) {
+        if (n == 1) {
+            return true;
+        }
+        if (n == 0) {
+            return false;
+        }
+        while (n != 1) {
+            if (n % 3 != 0) {
+                return false;
+            }
+            n /= 3;
+        }
+        return true;
+    }
 }

@@ -14,5 +14,12 @@ class PowerOfThreeTest {
         assertThat(powerOfThree.isPowerOfThree(9)).isTrue();
         assertThat(powerOfThree.isPowerOfThree(45)).isFalse();
     }
+    @Test
+    void isPowerOfThree2() {
+        assertThat(powerOfThree.isPowerOfThree2(27)).isTrue();
+        assertThat(powerOfThree.isPowerOfThree2(0)).isFalse();
+        assertThat(powerOfThree.isPowerOfThree2(9)).isTrue();
+        assertThat(powerOfThree.isPowerOfThree2(45)).isFalse();
+    }
 
 }
