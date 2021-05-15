@@ -15,4 +15,12 @@ public class NumberOf1Bits {
         return Integer.bitCount(n);
     }
 
+    public int hammingWeight2(int n) {
+        var s = 0;
+        do {
+            s += n & 1;
+        } while ((n = n >>> 1) != 0);
+        return s;
+    }
+
 }

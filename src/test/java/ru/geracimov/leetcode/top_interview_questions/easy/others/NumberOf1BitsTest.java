@@ -12,4 +12,11 @@ class NumberOf1BitsTest {
         assertThat(numberOf1Bits.hammingWeight(11)).isEqualTo(3);
     }
 
+    @RepeatedTest(10)
+    void hammingWeight2() {
+        assertThat(numberOf1Bits.hammingWeight2(11)).isEqualTo(3);
+        assertThat(numberOf1Bits.hammingWeight2(Integer.MIN_VALUE)).isEqualTo(1);
+        assertThat(numberOf1Bits.hammingWeight2(Integer.MAX_VALUE)).isEqualTo(31);
+    }
+
 }
