@@ -1,4 +1,4 @@
-package ru.geracimov.leetcode.Arrays101;
+package ru.geracimov.leetcode.arrays101;
 
 import java.util.Arrays;
 

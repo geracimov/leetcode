@@ -1,4 +1,4 @@
-package ru.geracimov.leetcode.Arrays101;
+package ru.geracimov.leetcode.arrays101;
 
 /**
  * Find Numbers with Even Number of Digits
