@@ -1,5 +1,7 @@
 package ru.geracimov.leetcode.recursion;
 
+import java.util.StringJoiner;
+
 /**
  * Swap Nodes in Pairs
  * <p>
@@ -42,16 +44,14 @@ class ListNode {
         this.next = next;
     }
 
-    static void print(ListNode head) {
-        do {
-            System.out.print(head);
-            head = head.next;
-        } while (head.next != null);
-        System.out.println(head);
-    }
-
     @Override
     public String toString() {
-        return "(" + val + ")";
+        ListNode curr = this;
+        var builder = new StringJoiner("->");
+        while (curr != null) {
+            builder.add("" + curr.val);
+            curr = curr.next;
+        }
+        return builder.toString();
     }
 }

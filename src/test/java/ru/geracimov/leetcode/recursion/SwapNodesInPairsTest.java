@@ -13,9 +13,9 @@ class SwapNodesInPairsTest {
         ListNode node3 = new ListNode(3, node4);
         ListNode node2 = new ListNode(2, node3);
         ListNode node1 = new ListNode(1, node2);
-        ListNode.print(node1);
+        System.out.println(node1);
         ListNode swap = swapNodesInPairs.swapPairs(node1);
-        ListNode.print(swap);
+        System.out.println(swap);
         assertThat(swap).hasFieldOrPropertyWithValue("val", 2)
                 .hasFieldOrPropertyWithValue("next", node1);
         assertThat(swap.next).hasFieldOrPropertyWithValue("val", 1)
