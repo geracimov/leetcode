@@ -36,11 +36,12 @@ class ListNode {
     }
 
     ListNode(int val) {
+        this();
         this.val = val;
     }
 
     ListNode(int val, ListNode next) {
-        this.val = val;
+        this(val);
         this.next = next;
     }
 
