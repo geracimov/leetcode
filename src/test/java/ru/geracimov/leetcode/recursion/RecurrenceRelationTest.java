@@ -4,9 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Recurrence Relation
- */
 class RecurrenceRelationTest {
     private final RecurrenceRelation recurrenceRelation = new RecurrenceRelation();
 

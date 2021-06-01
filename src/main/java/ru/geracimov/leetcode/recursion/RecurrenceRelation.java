@@ -4,6 +4,9 @@ import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Recurrence Relation
+ */
 public class RecurrenceRelation {
     private final Map<Point, Integer> cache = new HashMap<>();
 
