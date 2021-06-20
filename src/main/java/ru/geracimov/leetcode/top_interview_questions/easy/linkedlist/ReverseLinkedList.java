@@ -1,5 +1,8 @@
 package ru.geracimov.leetcode.top_interview_questions.easy.linkedlist;
 
+/**
+ * Given the head of a singly linked list, reverse the list, and return the reversed list.
+ */
 public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {
@@ -13,9 +16,6 @@ public class ReverseLinkedList {
     static class ListNode {
         int val;
         ListNode next;
-
-        ListNode() {
-        }
 
         ListNode(int val) {
             this.val = val;
