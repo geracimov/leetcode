@@ -26,7 +26,10 @@ class RemoveNthNodeFromEndOfListTest {
     void removeNthFromEnd() {
         node1.print();
         RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node1, 2);
-        listNode.print();
+        assertThat(listNode).isEqualTo(node1);
+        assertThat(listNode.next).isEqualTo(node2);
+        assertThat(listNode.next.next).isEqualTo(node3);
+        assertThat(listNode.next.next.next).isEqualTo(node5);
     }
 
     @Test
@@ -40,13 +43,15 @@ class RemoveNthNodeFromEndOfListTest {
     void removeNthFromEnd2() {
         node4.print();
         RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node4, 2);
-        listNode.print();
+        assertThat(listNode).isEqualTo(node5);
+        assertThat(listNode.next).isNull();
     }
 
     @Test
     void removeNthFromEnd2_() {
         node4.print();
         RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node4, 1);
-        listNode.print();
+        assertThat(listNode).isEqualTo(node4);
+        assertThat(listNode.next).isNull();
     }
 }
