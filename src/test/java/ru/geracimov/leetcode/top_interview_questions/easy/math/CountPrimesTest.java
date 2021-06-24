@@ -16,19 +16,12 @@ class CountPrimesTest {
     }
     @Test
     void countPrimes2() {
-
         assertThat(countPrimes.countPrimes(999983)).isEqualTo(78497);
-
     }
+
     @Test
     void countPrimes3() {
         assertThat(countPrimes.countPrimes(500000)).isEqualTo(41538);
-
-    }
-    @Test
-    void countPrimes33() {
-        assertThat(countPrimes.countPrimes(Integer.MAX_VALUE)).isEqualTo(41538);
-
     }
 
 }
