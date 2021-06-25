@@ -17,27 +17,4 @@ public class SymmetricTree {
         return isMirror(left.left, right.right) && isMirror(left.right, right.left);
     }
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-
-        @Override
-        public String toString() {
-            return String.valueOf(val);
-        }
-    }
 }

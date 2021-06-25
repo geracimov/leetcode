@@ -2,7 +2,6 @@ package ru.geracimov.leetcode.top_interview_questions.easy.trees;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.geracimov.leetcode.top_interview_questions.easy.trees.SymmetricTree.TreeNode;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
