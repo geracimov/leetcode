@@ -2,10 +2,8 @@ package ru.geracimov.leetcode.top_interview_questions.easy.linkedlist;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.geracimov.leetcode.top_interview_questions.easy.linkedlist.PalindromeLinkedList.ListNode;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class PalindromeLinkedListTest {
     ListNode node1, node2, node3, node4;

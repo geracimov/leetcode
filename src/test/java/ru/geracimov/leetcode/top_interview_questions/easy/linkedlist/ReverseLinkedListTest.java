@@ -1,10 +1,8 @@
 package ru.geracimov.leetcode.top_interview_questions.easy.linkedlist;
 
 import org.junit.jupiter.api.Test;
-import ru.geracimov.leetcode.top_interview_questions.easy.linkedlist.ReverseLinkedList.ListNode;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.linesOf;
 
 class ReverseLinkedListTest {
     ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
@@ -35,6 +33,7 @@ class ReverseLinkedListTest {
         assertThat(listNode.next).isEqualTo(node4);
         assertThat(listNode.next.next).isNull();
     }
+
     @Test
     void reverseList1() {
         ListNode listNode = reverseLinkedList.reverseList(node5);

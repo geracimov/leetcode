@@ -7,15 +7,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class RemoveNthNodeFromEndOfListTest {
     private final RemoveNthNodeFromEndOfList removeNthNodeFromEndOfList = new RemoveNthNodeFromEndOfList();
-    private RemoveNthNodeFromEndOfList.ListNode node1, node2, node3, node4, node5;
+    private ListNode node1, node2, node3, node4, node5;
 
     @BeforeEach
     void setUp() {
-        node1 = new RemoveNthNodeFromEndOfList.ListNode(1);
-        node2 = new RemoveNthNodeFromEndOfList.ListNode(2);
-        node3 = new RemoveNthNodeFromEndOfList.ListNode(3);
-        node4 = new RemoveNthNodeFromEndOfList.ListNode(4);
-        node5 = new RemoveNthNodeFromEndOfList.ListNode(5);
+        node1 = new ListNode(1);
+        node2 = new ListNode(2);
+        node3 = new ListNode(3);
+        node4 = new ListNode(4);
+        node5 = new ListNode(5);
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
@@ -25,7 +25,7 @@ class RemoveNthNodeFromEndOfListTest {
     @Test
     void removeNthFromEnd() {
         node1.print();
-        RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node1, 2);
+        ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node1, 2);
         assertThat(listNode).isEqualTo(node1);
         assertThat(listNode.next).isEqualTo(node2);
         assertThat(listNode.next.next).isEqualTo(node3);
@@ -35,14 +35,14 @@ class RemoveNthNodeFromEndOfListTest {
     @Test
     void removeNthFromEnd1() {
         node5.print();
-        RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node5, 1);
+        ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node5, 1);
         assertThat(listNode).isNull();
     }
 
     @Test
     void removeNthFromEnd2() {
         node4.print();
-        RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node4, 2);
+        ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node4, 2);
         assertThat(listNode).isEqualTo(node5);
         assertThat(listNode.next).isNull();
     }
@@ -50,7 +50,7 @@ class RemoveNthNodeFromEndOfListTest {
     @Test
     void removeNthFromEnd2_() {
         node4.print();
-        RemoveNthNodeFromEndOfList.ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node4, 1);
+        ListNode listNode = removeNthNodeFromEndOfList.removeNthFromEnd(node4, 1);
         assertThat(listNode).isEqualTo(node4);
         assertThat(listNode.next).isNull();
     }

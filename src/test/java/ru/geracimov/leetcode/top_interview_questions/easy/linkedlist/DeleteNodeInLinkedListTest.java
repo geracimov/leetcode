@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static ru.geracimov.leetcode.top_interview_questions.easy.linkedlist.DeleteNodeInLinkedList.ListNode;
 
 class DeleteNodeInLinkedListTest {
     private final DeleteNodeInLinkedList remover = new DeleteNodeInLinkedList();
