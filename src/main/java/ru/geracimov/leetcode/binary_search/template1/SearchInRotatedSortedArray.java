@@ -10,10 +10,41 @@ package ru.geracimov.leetcode.binary_search.template1;
  * <p>
  * You must write an algorithm with O(log n) runtime complexity.</p>
  */
+@SuppressWarnings("unused")
 public class SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
-        int length = nums.length;
-
-        return target + length;
+        return searchBinary(nums, target);
     }
+
+    public int searchBinary(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[start] <= nums[mid]) {
+                if (target >= nums[start] && target < nums[mid])
+                    end = mid - 1;
+                else
+                    start = mid + 1;
+            } else if (nums[mid] <= nums[end]) {
+                if (target > nums[mid] && target <= nums[end])
+                    start = mid + 1;
+                else
+                    end = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    public int searchLinear(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
 }
