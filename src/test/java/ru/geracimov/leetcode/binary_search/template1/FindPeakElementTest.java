@@ -1,6 +1,7 @@
 package ru.geracimov.leetcode.binary_search.template1;
 
 import org.junit.jupiter.api.Test;
+import ru.geracimov.leetcode.binary_search.template2.FindPeakElement;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

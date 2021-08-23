@@ -1,4 +1,4 @@
-package ru.geracimov.leetcode.binary_search.template1;
+package ru.geracimov.leetcode.binary_search.template2;
 
 /**
  * <h1>Find Minimum in Rotated Sorted Array</h1>
